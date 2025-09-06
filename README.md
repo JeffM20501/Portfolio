@@ -52,15 +52,15 @@
 
 ## Features Implemented
 
-- Responsive layout → Works across desktop and smaller screens using media queries.
+- Responsive layout:  Works across desktop and smaller screens using media queries.
 
-- Smooth scroll → Contact button scrolls directly to the form.
+- Smooth scroll:  Contact button scrolls directly to the form.
 
-- SVG icon styling → GitHub logo is scalable, color-inherits, and animated on hover.
+- SVG icon styling:  GitHub logo is scalable, color-inherits, and animated on hover.
 
-- Interactive hover states → Buttons, project images, and links respond with color and scale transitions.
+- Interactive hover states:  Buttons, project images, and links respond with color and scale transitions.
 
-- Clean project showcase → Each project has a screenshot, title, description, and links.
+- Clean project showcase: Each project has a screenshot, title, description, and links.
 
 
 ## Continued development
