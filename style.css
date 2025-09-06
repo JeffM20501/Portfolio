@@ -8,7 +8,7 @@
 :root{
     /*fonts*/
     --fontFamily:'Space Grotesk';
-    --fontSize:1.2rem;
+    --fontSize:1.1rem;
     --hColor:white;
     --fontColor:hsl(0, 0%, 83%);
     /*BackGround*/
@@ -65,6 +65,9 @@ button{
     cursor: pointer;
     margin-block: 30px;
     transition: all .5s ease-in-out;
+    @media(width<850px){
+        color: var(--buttonBG);
+    }
 }
 
 button::after{
@@ -106,6 +109,14 @@ input{
     margin-block: 30px;
     block-size: 60px;
     font-size: var(--fontSize);
+    padding: 10px;
+}
+
+input:hover,
+input:focus-visible{
+    border: 3px solid var(--buttonBG);
+    border-radius: 15px;
+    cursor: pointer;
 }
 
 textarea{
@@ -119,12 +130,14 @@ textarea{
     block-size: 100px;
     resize: none;
     font-size: var(--fontSize);
+    padding: 10px;
 }
 
 textarea:hover,
 textarea:focus{
     cursor: pointer;
-    border: none;
+    border: 3px solid var(--buttonBG);
+    border-radius: 15px;
 }
 
 a{
@@ -206,7 +219,8 @@ a:hover{
 .headPro h2{
     font-size: 2.5rem;
     font-weight: 600;
-    letter-spacing: 3px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
 }
 
 .projects{
@@ -285,4 +299,5 @@ a:hover{
 
 .footer button{
     background-color: inherit;
+    display: block;
 }
