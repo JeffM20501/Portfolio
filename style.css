@@ -63,7 +63,7 @@ button{
     font-weight: 600;
     position: relative;
     cursor: pointer;
-    margin-block: 20px;
+    margin-block: 30px;
     transition: all .5s ease-in-out;
 }
 
@@ -251,6 +251,10 @@ a:hover{
     background-color: var(--footerBg);
     padding-inline: 20%;
     padding-block: 2%;
+    @media(width<850px){
+        padding-inline:10px;
+        text-align: center;
+    }
 }
 
 .contact{
@@ -270,6 +274,13 @@ a:hover{
 
 .footer .header{
     margin-block: 0;
+    @media(width<850px){
+        display: block;
+    }
+}
+
+.footer .header h2{
+    margin-block: 20px;
 }
 
 .footer button{
