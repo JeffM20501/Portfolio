@@ -82,6 +82,7 @@ button:hover::after{
 
 form{
     max-inline-size: 100%;
+    display: block;
 }
 
 input{
@@ -92,6 +93,10 @@ input{
     background-color: var(--footerBg);
     font-family: var(--fontFamily);
     color: var(--hColor);
+    display: block;
+    margin-block: 30px;
+    block-size: 60px;
+    font-size: var(--fontSize);
 }
 
 textarea{
@@ -102,6 +107,15 @@ textarea{
     background-color: var(--footerBg);
     font-family: var(--fontFamily);
     color: var(--hColor);
+    block-size: 100px;
+    resize: none;
+    font-size: var(--fontSize);
+}
+
+textarea:hover,
+textarea:focus{
+    cursor: pointer;
+    border: none;
 }
 
 .wrapper{
@@ -180,13 +194,21 @@ textarea{
 }
 
 .contact{
-    display: grid;
-    grid-template-columns: repeat(2 1fr);
-    gap: 20px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .contact h2{
     font-size: 3rem;
     font-weight: 650;
     letter-spacing: 3px;
+}
+
+.footer .header{
+    margin-block: 0;
+    padding-bottom: 5%;
+}
+
+.footer button{
+    background-color: inherit;
 }
