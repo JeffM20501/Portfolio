@@ -315,6 +315,11 @@ a:hover{
 ::-webkit-scrollbar-thumb{
     background: var(--buttonBG);
     border-radius: 100vw;
-    box-shadow: 1px 1px 8px var(--fontColor);
 }
 
+@supports(scrollbar-color: red blue){
+    *{
+        scrollbar-color: var(--buttonBG) var(--mainBg);
+        scroll-behavior: smooth;
+    }
+}
